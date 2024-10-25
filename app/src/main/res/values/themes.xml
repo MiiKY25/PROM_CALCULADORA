@@ -6,4 +6,24 @@
     </style>
 
     <style name="Theme.Calculadora" parent="Base.Theme.Calculadora" />
+
+    <style name="NumberButtom">
+        <item name="android:background">@color/gris</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="SymbolButton">
+        <item name="android:background">@color/gris</item>
+        <item name="android:textColor">@color/azul</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Separator">
+        <item name="android:background">@color/azul</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:elevation">9dp</item>
+
+    </style>
 </resources>
