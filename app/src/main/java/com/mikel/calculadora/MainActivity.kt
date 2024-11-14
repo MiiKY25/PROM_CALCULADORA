@@ -12,16 +12,28 @@ import com.mikel.calculadora.databinding.ActivityMainBinding
  */
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
-    // Variable de enlace para la vista (binding) de ActivityMain
+    /**
+     * Enlace (binding) a la vista de `ActivityMain`.
+     * Proporciona acceso a los elementos de la UI definidos en el archivo de diseño.
+     */
     private lateinit var binding: ActivityMainBinding
 
-    // Primer número para la operación aritmética
+    /**
+     * Primer número utilizado en la operación aritmética.
+     * Se almacena el valor ingresado antes de seleccionar una operación.
+     */
     private var firstNumber = 0.0
 
-    // Segundo número para la operación aritmética
+    /**
+     * Segundo número utilizado en la operación aritmética.
+     * Se almacena el valor ingresado después de seleccionar una operación.
+     */
     private var secondNumber = 0.0
 
-    // Operación aritmética actual (+, -, *, /)
+    /**
+     * Operación aritmética seleccionada para realizar entre `firstNumber` y `secondNumber`.
+     * Puede tomar valores como "+", "-", "*", o "/" según la operación elegida por el usuario.
+     */
     private var operation: String? = null
 
     /**
